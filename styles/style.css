@@ -30,9 +30,10 @@
 }
 
 .box.left {
-    background-image: url("../images/1set.png");
+   
     width: 25%;
     background-repeat: no-repeat;
+    transition: .07s all ease;
 }
 
 .box.game {
@@ -43,7 +44,6 @@
 }
 
 .box.right {
-    background-image: url("../images/1set.png");
     width: 25%;
     background-repeat: no-repeat;
 }
