@@ -41,9 +41,11 @@
     background: black;
     height: 100%;
     overflow: hidden;
+
 }
 
 .box.right {
     width: 25%;
     background-repeat: no-repeat;
+    transition: .07s all ease;
 }

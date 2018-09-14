@@ -26,7 +26,7 @@ let imageChange = function () {
     left.style.backgroundImage = 'url(../images/'+trees[index]+')';
     right.style.backgroundImage = 'url(../images/'+trees[index]+')';
     
-    if( interval >= 2) {
+    if(gameover) {
         clearInterval(tree);
     } else {
         index++;
@@ -36,3 +36,9 @@ let imageChange = function () {
 let tree = setInterval(imageChange, 150);
 
 
+let theme = new Audio('../sounds/linkintheme.mp3');
+
+theme.play();
+
+
+const player = url('.//images/player1.png');
