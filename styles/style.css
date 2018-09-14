@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    height: 442px;
+    background: red;
+}
+
+.game__header {
+    margin: 0 auto;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.game__body {
+    display: flex;
+    height: 100%;
+}
+
+.box {
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.box.left {
+    background-image: url("../images/1set.png");
+    width: 25%;
+    background-repeat: no-repeat;
+}
+
+.box.game {
+    width: 60%;
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box.right {
+    background-image: url("../images/1set.png");
+    width: 25%;
+    background-repeat: no-repeat;
+}
