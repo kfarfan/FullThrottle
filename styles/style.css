@@ -18,6 +18,8 @@
     height: 8%;
     width: 100%;
     text-align: center;
+    z-index: 9999;
+    position: static;
 
 }
 
@@ -25,6 +27,7 @@
     display: flex;
     height: 100%;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -72,7 +75,8 @@
 #npc {
     position: absolute;
     height: 165px;
+    margin-top: -100px;
     width: 80px;
-    z-index: 1000;
+    z-index: 3;
     background-image: url('../images/npc1.png');
 }
