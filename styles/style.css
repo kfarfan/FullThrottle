@@ -6,13 +6,16 @@
 .container {
     margin: 0 auto;
     width: 800px;
-    height: 442px;
+    height: 450px;
     background: red;
+    border: 4px solid black;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .game__header {
     margin: 0 auto;
-    height: 10%;
+    height: 8%;
     width: 100%;
     text-align: center;
 
@@ -21,11 +24,16 @@
 .game__body {
     display: flex;
     height: 100%;
+    overflow: hidden;
+
 }
+
 
 .box {
     flex-direction: column;
     height: 100%;
+    overflow: auto;
+    overflow: hidden;
     
 }
 
@@ -34,6 +42,7 @@
     width: 25%;
     background-repeat: no-repeat;
     transition: .07s all ease;
+
 }
 
 .box.game {
@@ -48,4 +57,12 @@
     width: 25%;
     background-repeat: no-repeat;
     transition: .07s all ease;
+}
+
+.player {
+    height: 75px;
+    width: 35px;
+    margin-left: 200px;
+    background-repeat: no-repeat;
+    margin-top: 310px;
 }
