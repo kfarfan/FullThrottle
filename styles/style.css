@@ -47,9 +47,10 @@
 
 .box.game {
     width: 60%;
-    background: black;
     height: 100%;
     overflow: hidden;
+    background-image: url('../images/track1.png');
+    transition: .45s all ease;
 
 }
 
@@ -64,5 +65,14 @@
     width: 35px;
     margin-left: 200px;
     background-repeat: no-repeat;
-    margin-top: 310px;
+    margin-top: 300px;
+    transition: .8s all ease;
+}
+
+#npc {
+    position: absolute;
+    height: 165px;
+    width: 80px;
+    z-index: 1000;
+    background-image: url('../images/npc1.png');
 }
