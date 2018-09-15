@@ -41,11 +41,11 @@ let tree = setInterval(imageChange, 150);
 
 let playerMoves = function playerMove (e) {
     if(e.keyCode == '37' && moves !== 0){
-        moves-=20;
+        moves-=50;
         player.style.marginLeft = ''+moves+'px';
         }
     if(e.keyCode == '39' && moves !== 400){
-         moves+=20;
+         moves+=50;
          player.style.marginLeft = ''+moves+'px';
          }
 }
