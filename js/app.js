@@ -17,6 +17,10 @@ const tracks = ['track1.png', 'track2.png', 'track3.png', 'track4.png', 'track5.
 const player = document.querySelector('.player');
 player.style.backgroundImage = `url(../images/player1.png)`;
 let moves = 200;
+
+let npc = document.querySelector('#npc');
+
+let npcMarginTop = 0;
 const gameover = false;
 
 
@@ -53,6 +57,22 @@ let playerMoves = function playerMove (e) {
          player.style.marginLeft = ''+moves+'px';
          }
 }
+
+// create function to move npc down
+let npcMove =  () => {
+    if(npcMarginTop !== 300){
+        npcMarginTop+= 20;
+    }
+    npc.style.marginTop = ''+npcMarginTop+'px';
+    if(gameOver){
+        clearInterval(npcDriving);
+    }
+    
+}
+
+let npcDriving = setInterval(npcMove, 100);
+
+
 
 document.addEventListener('keydown', playerMoves);
 
